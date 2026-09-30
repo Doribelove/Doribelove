@@ -7,7 +7,7 @@
 ## 机器人项目
 
 - **[3YD · 三层全局规划](https://github.com/Doribelove/pudu_robot_ws/tree/3YD/research/3yd_v7)** — ROS 2 下的拓扑引导、0.15 m 栅格搜索与 0.05 m 运动学规划；支持语义／无语义地图和连续车体校验。
-- **[Autolabor · 机器人导航系统](https://github.com/Doribelove/autolabor-robot-nav)** — ROS Noetic 双机导航，集成 FAST-LIO、覆盖规划、异步 Hybrid A* 与 TEB，支持 ARM64 构建与部署。
+- **[Autolabor · 机器人导航系统](https://github.com/Doribelove/autolabor-robot-nav)** — ROS Noetic 双机导航，集成 FAST-LIO、双GNSS、PPO、覆盖规划、异步 Hybrid A* 与 TEB，支持 ARM64 构建与部署。
 - **[Coverage Navigation · 覆盖导航](https://github.com/Doribelove/autolabor-coverage-navigation)** — 面向阿克曼底盘的多边形覆盖规划、并行 Hybrid A* 转场与定制 TEB 跟踪。
 - **[EGO-Planner on Ground](https://github.com/Doribelove/egoplanner_on_ground)** — 面向地面车适配二维规划、B 样条轨迹、MPC 控制与点云预处理。
 - **[QT-UI · 机器人操作界面](https://github.com/Doribelove/QT-UI)** — Qt Widgets 与 ROS 集成，嵌入 RViz，提供导航、视觉、清扫及设备参数面板。
