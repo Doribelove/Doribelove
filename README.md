@@ -3,8 +3,6 @@
 **[打开我的在线简历 → doribelove.github.io](https://doribelove.github.io/)**
 
 
-电子科技大学（UESTC）在读学生，聚焦移动机器人导航、路径规划与系统工程。通过固定对照实验、边界测试和上游代码审阅持续验证工作。
-
 Student at UESTC, working on mobile robotics, motion planning, and reliable software systems.
 
 ## Selected projects
