@@ -7,15 +7,13 @@
 ## 论文成果
 
 **SDERI: Autonomous Navigation with Safe Subgoal Distributions and Exploration-Replanning Index in Dynamic Environments**  
-IROS 2026 · Paper **775** · **学生第二作者（总作者排序第三）**  
-Jingru Zhang, Mingzhu Wei, **Yongqi Li**, Zhenni Zeng, Min Gong, Hui Li.
+IROS 2026 · Paper **775** · **学生第二作者**  
 
 围绕动态环境自主导航，研究安全子目标分布与探索—重规划决策。
 [官方论文入口与摘要](https://2026.ieee-iros.org/program/contributed_talks/#eeb7f7:775) · [官方作者索引](https://2026.ieee-iros.org/program/paper-index/?q=SDERI) · [作者项目与演示视频](https://sites.google.com/view/sderifornavigation)
 
 **通航机场动态环境下无人车路径规划方法**  
 《系统工程与电子技术》· **第一作者** · **已录用，待发表（预计 2026 年 11 月）**  
-**李永祺**，魏明珠，曾珍妮，张景茹，李辉，龚敏，董巾航。
 
 结合改进 Hybrid A* 与优化 TEB，引入 Reeds–Shepp 回溯、加加速度约束和级联 PID 跟踪校正，研究机场动态环境下的路径平滑性、避障与运动稳定性，并进行仿真与实物验证。
 [作者稿 PDF](https://doribelove.github.io/papers/ssee-2026-1172-author-manuscript.pdf) · [论文详情](https://doribelove.github.io/#publications)
