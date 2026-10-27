@@ -18,17 +18,19 @@ IROS 2026 · Paper **775** · **学生第二作者**
 结合改进 Hybrid A* 与优化 TEB，引入 Reeds–Shepp 回溯、加加速度约束和级联 PID 跟踪校正，研究机场动态环境下的路径平滑性、避障与运动稳定性，并进行仿真与实物验证。
 [作者稿 PDF](https://doribelove.github.io/papers/ssee-2026-1172-author-manuscript.pdf) · [论文详情](https://doribelove.github.io/#publications)
 
-## 近期项目
+## 核心完整项目
 
 ### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
 
 基于 ROS 2 / Nav2 构建分层规划链路，连接拓扑引导、参考路径、运动学搜索与轨迹校验，完成大地图规划、性能优化和可视化。V11-r3 静态规划测试共 300 次，297 次精确到达、3 次容差到达；请求耗时中位数 **0.816 s**、P95 **3.657 s**。
 [图文与实验结果](https://doribelove.github.io/projects/#pudu) · [项目源码](https://github.com/Doribelove/pudu_robot_ws)
 
-### [净途智行 · 地平线挑战杯实车项目](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
+### [净途智行 · 国产无人清扫车系统](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
-基于 J6M + Jetson 双机平台开发无人清扫车，集成 FAST-LIO / ICP 或双天线 GNSS、条带覆盖、Hybrid A*、TEB、YOLO11s-GAM 以及语音 / Qt 任务交互。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**，完成清扫机构集成、实车刷扫与垃圾收集。
-[实车照片与视频](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
+地平线挑战杯项目负责人，基于 **J6M + Jetson AGX** 构建定位、感知、规划、交互与清扫执行系统。J6M 承担定位建图、覆盖规划、局部避障和控制仲裁，AGX 承担模型推理、语音解析与 Qt 交互。集成 FAST-LIO / ICP 或双天线 GNSS、Hybrid A* / TEB、三路环视垃圾识别与 BEV 坐标映射，并通过 **Qwen 8B** 解析和分解清扫任务。
+
+围绕斑马线减速、靠右行驶、信号灯响应，以及工厂、地下停车场和商场覆盖规划，提供三维场景演示。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**，完成实车刷扫与垃圾收集。
+[完整项目与视频演示](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
 ### [不二鸟 · 华为存储杯多模态检索问答](https://github.com/Doribelove/huawei-storage-cup-mrag)
 
