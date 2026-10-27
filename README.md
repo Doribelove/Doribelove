@@ -39,18 +39,19 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 ## 开源贡献
 
-截至 **2026-10-16**，**24 个 PR 已合并至 10 个上游开源项目**。
+截至 **2026-10-27**，**26 个 PR 已合并至 11 个上游开源项目**。
 
 | 项目 | 近期或代表性贡献 | 合并记录 |
 | --- | --- | --- |
+| REA | 修复 Mach-O 动态库路径解析，保留换行符与 Unicode 行分隔符 | [#5363](https://github.com/morluto/rea/pull/5363) |
 | Robotics Toolbox | 补全 mstraj 轨迹速度、加速度与时间轨迹标记 | [#706](https://github.com/petercorke/robotics-toolbox-python/pull/706) |
-| SpatialMath | Python 3.10 Self 依赖修复；三维直线距离计算修复 | [#233](https://github.com/rai-opensource/spatialmath-python/pull/233) · [#224](https://github.com/rai-opensource/spatialmath-python/pull/224) |
+| SpatialMath | 修复三维直线关系的尺度敏感问题、直线距离计算与 Python 3.10 Self 依赖 | [#232](https://github.com/rai-opensource/spatialmath-python/pull/232) · [#224](https://github.com/rai-opensource/spatialmath-python/pull/224) · [#233](https://github.com/rai-opensource/spatialmath-python/pull/233) |
 | Pint | 按函数签名处理可变位置参数的单位换算 | [#2422](https://github.com/hgrecco/pint/pull/2422) |
 | PyData / Sparse | 稀疏切片内存优化、零维数组转换、列优先 flatten | [#957](https://github.com/pydata/sparse/pull/957) · [#963](https://github.com/pydata/sparse/pull/963) · [#964](https://github.com/pydata/sparse/pull/964) |
 | GitHub / Spec Kit | 扩展历史版本查询与精确版本安装 | [#4726](https://github.com/github/spec-kit/pull/4726) |
 | Gymnasium / PettingZoo | 整数空间批处理；Parallel API 动作裁剪支持 | [#1695](https://github.com/Farama-Foundation/Gymnasium/pull/1695) · [#1489](https://github.com/Farama-Foundation/PettingZoo/pull/1489) |
 
-[查看全部上游合并记录](https://github.com/search?q=is%3Apr+is%3Amerged+author%3ADoribelove+-user%3ADoribelove&type=pullrequests) · [24 项贡献详情](https://doribelove.github.io/evidence/contributions-20261016.json)
+[查看全部上游合并记录](https://github.com/search?q=is%3Apr+is%3Amerged+author%3ADoribelove+-user%3ADoribelove&type=pullrequests) · [26 项贡献详情](https://doribelove.github.io/evidence/contributions-20261027.json)
 
 ## 更多实践与技术栈
 
