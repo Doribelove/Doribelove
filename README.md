@@ -1,6 +1,6 @@
 # YongQi Li
 
-电子科技大学在读，关注 **移动机器人导航、运动规划与多模态检索问答**。从算法实现、系统集成到实车记录，持续向机器人与科学计算开源项目贡献修复。
+电子科技大学在读，关注 **移动机器人导航、运动规划与多模态检索问答**。开展算法实现、系统集成与实车验证，持续向机器人与科学计算开源项目贡献修复。
 
 [在线简历](https://doribelove.github.io/) · [可打印简历](https://doribelove.github.io/resume/) · [项目图文与视频](https://doribelove.github.io/projects/) · [联系邮箱](mailto:doribelove@gmail.com)
 
@@ -22,24 +22,24 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 ### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
 
-ROS 2 / Nav2 工作实践：连接拓扑引导、参考路径、运动学搜索和终验，整理大地图规划结果、性能记录与可视化。最新公开 V11-r3 静态完整规划记录：300 次中 297 次精确到达、3 次容差到达，均满足该版验收规则；耗时中位 **0.816 s**、P95 **3.657 s**。范围为静态实验和指定受控事件回放，实车验收另计。
-[图文与实验入口](https://doribelove.github.io/projects/#pudu) · [源码与最新记录](https://github.com/Doribelove/pudu_robot_ws)
+基于 ROS 2 / Nav2 构建分层规划链路，连接拓扑引导、参考路径、运动学搜索与轨迹校验，完成大地图规划、性能优化和可视化。V11-r3 静态规划测试共 300 次，297 次精确到达、3 次容差到达；请求耗时中位数 **0.816 s**、P95 **3.657 s**。
+[图文与实验结果](https://doribelove.github.io/projects/#pudu) · [项目源码](https://github.com/Doribelove/pudu_robot_ws)
 
 ### [净途智行 · 地平线挑战杯实车项目](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
-J6M + Jetson 双机无人清扫车，集成 FAST-LIO / ICP 或双天线 GNSS、条带覆盖、Hybrid A*、TEB、YOLO11s-GAM 以及语音 / Qt 任务交互。技术报告记录了 **160 m² / 98.0% 导航覆盖**；另有安装清扫机构后的实际刷扫与垃圾收集视频。
+基于 J6M + Jetson 双机平台开发无人清扫车，集成 FAST-LIO / ICP 或双天线 GNSS、条带覆盖、Hybrid A*、TEB、YOLO11s-GAM 以及语音 / Qt 任务交互。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**，完成清扫机构集成、实车刷扫与垃圾收集。
 [实车照片与视频](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
 ### [不二鸟 · 华为存储杯多模态检索问答](https://github.com/Doribelove/huawei-storage-cup-mrag)
 
-面向 PDF 文本、表格与图像，以 **BGE-M3 + BGE reranker + Qwen3-VL-8B** 构建检索、Reader、来源绑定和证据支持检查，适配本地建库与 question-only HTTP 查询。公开 r58 已提交版本源码、真实输入输出及拒答案例。
+面向 PDF 文本、表格与图像，以 **BGE-M3 + BGE reranker + Qwen3-VL-8B** 构建检索、Reader、来源绑定和证据支持检查，支持本地建库与 question-only HTTP 查询，并实现基于证据充分性的拒答处理。
 
-历史 30 题开发集：本地同模型判分 **26/30**，同作者原文完整支持审阅 **25/30**；属于开发记录，不作为官方比赛成绩。
+30 题本地评测中，同模型判分 **26/30**，作者对照原文审阅的完整支持结果为 **25/30**。
 [图文与案例](https://doribelove.github.io/projects/#huawei) · [系统设计](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/DESIGN.md)
 
 ## 开源贡献
 
-截至 **2026-10-16**，**24 个 PR 已合并至 10 个其他所有者的上游仓库**，不含自有仓库内部合并。
+截至 **2026-10-16**，**24 个 PR 已合并至 10 个上游开源项目**。
 
 | 项目 | 近期或代表性贡献 | 合并记录 |
 | --- | --- | --- |
@@ -50,7 +50,7 @@ J6M + Jetson 双机无人清扫车，集成 FAST-LIO / ICP 或双天线 GNSS、�
 | GitHub / Spec Kit | 扩展历史版本查询与精确版本安装 | [#4726](https://github.com/github/spec-kit/pull/4726) |
 | Gymnasium / PettingZoo | 整数空间批处理；Parallel API 动作裁剪支持 | [#1695](https://github.com/Farama-Foundation/Gymnasium/pull/1695) · [#1489](https://github.com/Farama-Foundation/PettingZoo/pull/1489) |
 
-[查看全部上游合并记录](https://github.com/search?q=is%3Apr+is%3Amerged+author%3ADoribelove+-user%3ADoribelove&type=pullrequests) · [24 项核验清单](https://doribelove.github.io/evidence/contributions-20261016.json)
+[查看全部上游合并记录](https://github.com/search?q=is%3Apr+is%3Amerged+author%3ADoribelove+-user%3ADoribelove&type=pullrequests) · [24 项贡献详情](https://doribelove.github.io/evidence/contributions-20261016.json)
 
 ## 更多实践与技术栈
 
@@ -58,4 +58,4 @@ J6M + Jetson 双机无人清扫车，集成 FAST-LIO / ICP 或双天线 GNSS、�
 
 **C++ / Python · ROS 1 / ROS 2 · Linux · Nav2 · FAST-LIO / ICP · Hybrid A* / TEB · B-spline / MPC · 多模态 RAG**
 
-更新于 2026-10-16。论文发表预期以期刊最终安排为准；项目指标均附对应记录与适用范围。
+更新于 2026-10-27。
