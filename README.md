@@ -29,8 +29,13 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 地平线挑战杯项目负责人，基于 **J6M + Jetson AGX** 构建定位、感知、规划、交互与清扫执行系统。J6M 承担定位建图、覆盖规划、局部避障和控制仲裁，AGX 承担模型推理、语音解析与 Qt 交互。集成 FAST-LIO / ICP 或双天线 GNSS、Hybrid A* / TEB、三路环视垃圾识别与 BEV 坐标映射，并通过 **Qwen 8B** 解析和分解清扫任务。
 
-围绕斑马线减速、靠右行驶、信号灯响应，以及工厂、地下停车场和商场覆盖规划，提供三维场景演示。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**，完成实车刷扫与垃圾收集。
+围绕斑马线减速、靠右行驶、信号灯响应，以及工厂、地下停车场和商场覆盖规划，提供三维场景演示。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**。2026 年 10 月重新装配车辆，在机坪和滑行道开展黎明、白天、黄昏与夜晚测试，取得 **24 次回收成功、12 次避障成功**，提供实车演示与轨迹、相机、点云同步回放。
 [完整项目与视频演示](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
+
+### [魔方机器人 · 双臂视觉复原](https://github.com/Doribelove/robot_mofang)
+
+基于四路视觉识别、**Two-Phase** 求解与双臂协同执行，完成从六面图像采集、54 位状态识别、复原公式计算到机械动作优化的完整系统。使用 **ODrive + Arduino** 控制双腕与夹爪，**7 秒完成识别、解算和成功还原**。获 **2024 年第七届中国高校智能机器人创意大赛国家级二等奖**，总排名 **9/55**。
+[项目与完整视频](https://doribelove.github.io/projects/#cube) · [项目源码](https://github.com/Doribelove/robot_mofang) · [B 站演示](https://www.bilibili.com/video/BV1haNg6fE5s/)
 
 ### [不二鸟 · 华为存储杯多模态检索问答](https://github.com/Doribelove/huawei-storage-cup-mrag)
 
