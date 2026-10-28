@@ -32,6 +32,13 @@ IROS 2026 · Paper **775** · **学生第二作者**
 围绕斑马线减速、靠右行驶、信号灯响应，以及工厂、地下停车场和商场覆盖规划，提供三维场景演示。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**。2026 年 10 月重新装配车辆，在机坪和滑行道开展黎明、白天、黄昏与夜晚测试，取得 **24 次回收成功、12 次避障成功**，提供实车演示与轨迹、相机、点云同步回放。
 [完整项目与视频演示](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
+### [多旋翼无人机 · 自主导航与视觉抓取](https://doribelove.github.io/projects/#drone)
+
+负责飞行平台设计与系统集成，并担任自主抓取项目队长。完成四旋翼结构、动力与供电设计，基于 **PX4 / MAVROS / Jetson / ROS** 连接飞控、机载感知与任务执行，平台有效载荷 **>1.5 kg**、续航 **>20 min**。
+
+修改并部署 **EGO-Planner**，结合 **YOLOv8 与视觉伺服**完成障碍环境导航、柱面 QR 码识别、目标靠近、机械抓取与定点投放。获 **2024 年第四届四川省大学生未来飞行器挑战赛实践类一等奖**，完成“科研育人”翱翔计划 **优秀 A 结题**。
+[项目图文与演示](https://doribelove.github.io/projects/#drone)
+
 ### [魔方机器人 · 双臂视觉复原](https://github.com/Doribelove/robot_mofang)
 
 基于四路视觉识别、**Two-Phase** 求解与双臂协同执行，完成从六面图像采集、54 位状态识别、复原公式计算到机械动作优化的完整系统。使用 **ODrive + Arduino** 控制双腕与夹爪，**7 秒完成识别、解算和成功还原**。获 **2024 年第七届中国高校智能机器人创意大赛国家级二等奖**，总排名 **9/55**。
@@ -66,4 +73,4 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 **C++ / Python · ROS 1 / ROS 2 · Linux · Nav2 · FAST-LIO / ICP · Hybrid A* / TEB · B-spline / MPC · 多模态 RAG**
 
-更新于 2026-10-27。
+更新于 2026-10-28。
