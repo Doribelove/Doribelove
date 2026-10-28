@@ -37,7 +37,7 @@ IROS 2026 · Paper **775** · **学生第二作者**
 负责飞行平台设计与系统集成，并担任自主抓取项目队长。完成四旋翼结构、动力与供电设计，基于 **PX4 / MAVROS / Jetson / ROS** 连接飞控、机载感知与任务执行，平台有效载荷 **>1.5 kg**、续航 **>20 min**。
 
 修改并部署 **EGO-Planner**，结合 **YOLOv8 与视觉伺服**完成障碍环境导航、柱面 QR 码识别、目标靠近、机械抓取与定点投放。获 **2024 年第四届四川省大学生未来飞行器挑战赛实践类一等奖**，完成“科研育人”翱翔计划 **优秀 A 结题**。
-[项目图文与演示](https://doribelove.github.io/projects/#drone)
+[项目图文与演示](https://doribelove.github.io/projects/#drone) · [实机测试：目标识别与悬停](https://doribelove.github.io/projects/#drone-field)
 
 ### [魔方机器人 · 双臂视觉复原](https://github.com/Doribelove/robot_mofang)
 
