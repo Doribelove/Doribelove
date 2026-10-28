@@ -42,7 +42,7 @@ IROS 2026 · Paper **775** · **学生第二作者**
 ### [魔方机器人 · 双臂视觉复原](https://github.com/Doribelove/robot_mofang)
 
 基于四路视觉识别、**Two-Phase** 求解与双臂协同执行，完成从六面图像采集、54 位状态识别、复原公式计算到机械动作优化的完整系统。使用 **ODrive + Arduino** 控制双腕与夹爪，**7 秒完成识别、解算和成功还原**。获 **2024 年第七届中国高校智能机器人创意大赛国家级二等奖**，总排名 **9/55**。
-[项目与完整视频](https://doribelove.github.io/projects/#cube) · [项目源码](https://github.com/Doribelove/robot_mofang) · [B 站演示](https://www.bilibili.com/video/BV1haNg6fE5s/)
+[实物图集](https://doribelove.github.io/projects/#cube-gallery) · [实机测试视频](https://doribelove.github.io/projects/#cube-tests) · [项目与完整视频](https://doribelove.github.io/projects/#cube) · [项目源码](https://github.com/Doribelove/robot_mofang) · [B 站演示](https://www.bilibili.com/video/BV1haNg6fE5s/)
 
 ### [不二鸟 · 华为存储杯多模态检索问答](https://github.com/Doribelove/huawei-storage-cup-mrag)
 
