@@ -1,6 +1,6 @@
 # YongQi Li
 
-电子科技大学在读，关注 **移动机器人导航、运动规划与多模态检索问答**。开展算法实现、系统集成与实车验证，持续向机器人与科学计算开源项目贡献修复。
+电子科技大学本硕，关注 **移动机器人、智能驾驶、物理AI与多模态检索问答**。开展算法实现、系统集成与实车验证，持续向机器人与科学计算开源项目贡献修复。
 
 [在线简历](https://doribelove.github.io/) · [可打印简历](https://doribelove.github.io/resume/) · [项目图文与视频](https://doribelove.github.io/projects/) · [联系邮箱](mailto:doribelove@gmail.com)
 
