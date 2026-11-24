@@ -28,7 +28,7 @@ IROS 2026 · Paper **775** · **学生第二作者**
 ### [WALL-OSS-0.5 · Isaac Sim 双臂操作](https://github.com/Doribelove/wall-x/tree/main/examples/isaac_sim)
 
 在 RTX 5090 上接入 WALL-OSS-0.5 官方权重，为 Isaac Sim 中的 EX001 双臂实现推理接口与任务控制器。控制器根据仿真物体位姿协调双臂，并用模型输出修正右手位置。五段录像展示教具分装、定向擦板、旋盖、折巾与 USB 插接。擦板任务擦除全部 8 处目标并保留 6 处标记，USB 插入 9.56 mm，双手松开后保持插接 3.20 秒。
-[五段录像与复现方法](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/README.md) · [USB 插接录像](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/D5_hold_17/trial.mp4) · [逐项结果](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/results.json)
+[双臂仿真演示](https://doribelove.github.io/projects/#embodied) · [五段录像与复现方法](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/README.md) · [USB 插接录像](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/D5_hold_17/trial.mp4) · [逐项结果](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/results.json)
 
 ### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
 
@@ -59,15 +59,12 @@ IROS 2026 · Paper **775** · **学生第二作者**
 面向 PDF 文本、表格与图像，以 **BGE-M3 + BGE reranker + Qwen3-VL-8B** 构建检索、Reader、来源绑定和证据支持检查，支持本地建库与 question-only HTTP 查询，并实现基于证据充分性的拒答处理。
 
 30 题本地评测中，同模型判分 **26/30**，作者对照原文审阅的完整支持结果为 **25/30**。
-[比赛问答服务实测截图](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/assets/r58-http-log.png) · [系统架构图](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/assets/architecture-r58.png) · [图文与案例](https://doribelove.github.io/projects/#huawei) · [系统设计](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/DESIGN.md)
+[问答案例与系统架构](https://doribelove.github.io/projects/#huawei) · [系统设计](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/DESIGN.md)
 
 **车端应用 · 自然语言清扫任务解析**
 
-在净途智行无人车的 Jetson AGX 上运行本地模型，把 **2 × 10 m 区域清扫任务**解析为六个步骤。车辆依次准备区域、开启清扫盘、执行覆盖、关闭清扫盘、收杆并返回起点。实车回放同步展示步骤回执、点云、车辆轨迹和前视画面。
-
-![无人车任务结束时的实车回放，右侧六步回执全部完成，左侧显示覆盖轨迹](assets/vehicle-task-complete.png)
-
-[解析阶段原帧（1:17）](assets/vehicle-task-parsing.png) · [完成阶段原帧（4:49，回执 6/6）](assets/vehicle-task-complete.png)
+在净途智行无人车的 Jetson AGX 上部署本地模型，将 **2 × 10 m 区域清扫指令**拆成六步，从开启清扫盘、执行覆盖到收杆返航，实车完成全部六步。
+[实车回放与任务解析截图](https://doribelove.github.io/projects/#huawei-vehicle)
 
 ## 开源贡献
 
