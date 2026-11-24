@@ -1,6 +1,6 @@
 # YongQi Li
 
-电子科技大学本硕，关注 **移动机器人、智能驾驶、物理AI与多模态检索问答**。开展算法实现、系统集成与实车验证，持续向机器人与科学计算开源项目贡献修复。
+电子科技大学本硕，关注 **具身智能、移动机器人、智能驾驶与多模态检索问答**。在六轴机械臂上部署电梯按钮操作策略，在 Isaac Sim 中开发双臂操作任务，并在机场无人清扫车上完成感知、规划与控制集成。持续向机器人与科学计算开源项目贡献修复。
 
 [在线简历](https://doribelove.github.io/) · [可打印简历](https://doribelove.github.io/resume/) · [项目图文与视频](https://doribelove.github.io/projects/) · [联系邮箱](mailto:doribelove@gmail.com)
 
@@ -20,24 +20,34 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 ## 核心完整项目
 
+### [PiPER · 六轴机械臂操作电梯按钮](https://github.com/Doribelove/robot_arm-main)
+
+团队使用六轴 PiPER 在候梯厅按下呼梯键、点亮指示灯，进入轿厢后调整末端姿态，按下楼层键。机器人通过 ROS 2 采集主相机、腕部相机和关节反馈，将观测与语言指令送入视觉–语言–动作模型（VLA），再将返回的动作序列转换为关节指令。任一路反馈超时，控制器停止下发动作。
+[上行按钮控制程序](https://github.com/Doribelove/robot_arm-main/blob/main/main_dns_1128_offset_from_real_up.py) · [下行按钮控制程序](https://github.com/Doribelove/robot_arm-main/blob/main/main_dns_1128_offset_from_real_down.py) · [Gazebo / MuJoCo 机械臂仿真](https://github.com/Doribelove/robot_arm-main/tree/main/piper_ros/src/piper_sim)
+
+### [WALL-OSS-0.5 · Isaac Sim 双臂操作](https://github.com/Doribelove/wall-x/tree/main/examples/isaac_sim)
+
+在 RTX 5090 上接入 WALL-OSS-0.5 官方权重，为 Isaac Sim 中的 EX001 双臂实现推理接口与任务控制器。控制器根据仿真物体位姿协调双臂，并用模型输出修正右手位置。五段录像展示教具分装、定向擦板、旋盖、折巾与 USB 插接。擦板任务擦除全部 8 处目标并保留 6 处标记，USB 插入 9.56 mm，双手松开后保持插接 3.20 秒。
+[五段录像与复现方法](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/README.md) · [USB 插接录像](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/D5_hold_17/trial.mp4) · [逐项结果](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/results.json)
+
 ### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
 
 基于 ROS 2 / Nav2 构建分层规划链路，连接拓扑引导、参考路径、运动学搜索与轨迹校验，完成大地图规划、性能优化和可视化。V11-r3 静态规划测试共 300 次，297 次精确到达、3 次容差到达；请求耗时中位数 **0.816 s**、P95 **3.657 s**。
-[图文与实验结果](https://doribelove.github.io/projects/#pudu) · [项目源码](https://github.com/Doribelove/pudu_robot_ws)
+[图文与实验结果](https://doribelove.github.io/projects/#pudu) · [250 × 310 m 合成地库规划示例与路径图](https://github.com/Doribelove/pudu_robot_ws/tree/main/examples/3ydl3_garage_b) · [项目源码](https://github.com/Doribelove/pudu_robot_ws)
 
 ### [净途智行 · 国产无人清扫车系统](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
 地平线挑战杯项目负责人，基于 **J6M + Jetson AGX** 构建定位、感知、规划、交互与清扫执行系统。J6M 承担定位建图、覆盖规划、局部避障和控制仲裁，AGX 承担模型推理、语音解析与 Qt 交互。集成 FAST-LIO / ICP 或双天线 GNSS、Hybrid A* / TEB、三路环视垃圾识别与 BEV 坐标映射，并通过 **Qwen 8B** 解析和分解清扫任务。
 
 围绕斑马线减速、靠右行驶、信号灯响应，以及工厂、地下停车场和商场覆盖规划，提供三维场景演示。在机场场景完成 **160 m² 导航覆盖**、覆盖率 **98.0%**。2026 年 10 月重新装配车辆，在机坪和滑行道开展黎明、白天、黄昏与夜晚测试，取得 **24 次回收成功、12 次避障成功**，提供实车演示与轨迹、相机、点云同步回放。
-[完整项目与视频演示](https://doribelove.github.io/projects/#autolabor) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
+[机场实车测试](https://doribelove.github.io/projects/#autolabor-field) · [道路规则与覆盖规划三维演示](https://doribelove.github.io/projects/#autolabor-demos) · [robot_j6m_ws 源码](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
 ### [多旋翼无人机 · 自主导航与视觉抓取](https://doribelove.github.io/projects/#drone)
 
 负责飞行平台设计与系统集成，并担任自主抓取项目队长。完成四旋翼结构、动力与供电设计，基于 **PX4 / MAVROS / Jetson / ROS** 连接飞控、机载感知与任务执行，平台有效载荷 **>1.5 kg**、续航 **>20 min**。
 
 修改并部署 **EGO-Planner**，结合 **YOLOv8 与视觉伺服**完成障碍环境导航、柱面 QR 码识别、目标靠近、机械抓取与定点投放。获 **2024 年第四届四川省大学生未来飞行器挑战赛实践类一等奖**，完成“科研育人”翱翔计划 **优秀 A 结题**。
-[项目图文与演示](https://doribelove.github.io/projects/#drone) · [实机测试：目标识别与悬停](https://doribelove.github.io/projects/#drone-field)
+[项目图文与演示](https://doribelove.github.io/projects/#drone) · [实机目标识别与悬停](https://doribelove.github.io/projects/#drone-field) · [穿越门框与地标识别仿真录像](https://doribelove.github.io/projects/#drone-simulation)
 
 ### [魔方机器人 · 双臂视觉复原](https://github.com/Doribelove/robot_mofang)
 
@@ -49,7 +59,15 @@ IROS 2026 · Paper **775** · **学生第二作者**
 面向 PDF 文本、表格与图像，以 **BGE-M3 + BGE reranker + Qwen3-VL-8B** 构建检索、Reader、来源绑定和证据支持检查，支持本地建库与 question-only HTTP 查询，并实现基于证据充分性的拒答处理。
 
 30 题本地评测中，同模型判分 **26/30**，作者对照原文审阅的完整支持结果为 **25/30**。
-[图文与案例](https://doribelove.github.io/projects/#huawei) · [系统设计](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/DESIGN.md)
+[比赛问答服务实测截图](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/assets/r58-http-log.png) · [系统架构图](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/assets/architecture-r58.png) · [图文与案例](https://doribelove.github.io/projects/#huawei) · [系统设计](https://github.com/Doribelove/huawei-storage-cup-mrag/blob/main/docs/DESIGN.md)
+
+**车端应用 · 自然语言清扫任务解析**
+
+在净途智行无人车的 Jetson AGX 上运行本地模型，把 **2 × 10 m 区域清扫任务**解析为六个步骤。车辆依次准备区域、开启清扫盘、执行覆盖、关闭清扫盘、收杆并返回起点。实车回放同步展示步骤回执、点云、车辆轨迹和前视画面。
+
+![无人车任务结束时的实车回放，右侧六步回执全部完成，左侧显示覆盖轨迹](assets/vehicle-task-complete.png)
+
+[解析阶段原帧（1:17）](assets/vehicle-task-parsing.png) · [完成阶段原帧（4:49，回执 6/6）](assets/vehicle-task-complete.png)
 
 ## 开源贡献
 
@@ -74,4 +92,4 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 **C++ / Python · ROS 1 / ROS 2 · Linux · Nav2 · FAST-LIO / ICP · Hybrid A* / TEB · B-spline / MPC · 多模态 RAG**
 
-更新于 2026-11-05。
+项目更新于 2026-11-24。
