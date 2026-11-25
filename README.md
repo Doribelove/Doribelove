@@ -32,8 +32,11 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 ### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
 
-基于 ROS 2 / Nav2 构建分层规划链路，连接拓扑引导、参考路径、运动学搜索与轨迹校验，完成大地图规划、性能优化和可视化。V11-r3 静态规划测试共 300 次，297 次精确到达、3 次容差到达；请求耗时中位数 **0.816 s**、P95 **3.657 s**。
-[图文与实验结果](https://doribelove.github.io/projects/#pudu) · [250 × 310 m 合成地库规划示例与路径图](https://github.com/Doribelove/pudu_robot_ws/tree/main/examples/3ydl3_garage_b) · [项目源码](https://github.com/Doribelove/pudu_robot_ws)
+在 ROS 2 / Nav2 上实现 **3YDL3-V13-P6** 三层全局规划器。先按道路拓扑选择通道，在通道内搜索参考路径，交通条件变化时用增量 D* 更新路径。最后用三次 B 样条优化整条路线，并校验车体通行空间、曲率和交通规则。
+
+在 10 张地图上对 100 个固定任务各运行 3 轮，**300/300 次静态规划成功**，其中 297 次精确满足起终位姿，3 次在允许容差内完成。请求耗时中位数 **0.857 s**、P95 **3.674 s**。相同任务下，每次请求的进程树峰值内存（RSS）中位数为 **844.25 MiB**，较 V11-r3 的 990.39 MiB 低 **14.8%**。
+
+[项目图文](https://doribelove.github.io/projects/#pudu) · [P6 交付源码](https://github.com/Doribelove/pudu_robot_ws/tree/main/3YDL3-V13-P6-delivery) · [十图实验、分层对照与逐次数据](https://github.com/Doribelove/pudu_robot_ws/blob/6a4405d5dbe64c498c3bb4e672600a7332ea1acb/3YDL3-V13-P6-delivery/report/RESULTS.md) · [合成地库 B 示例（V11-r4）](https://github.com/Doribelove/pudu_robot_ws/tree/main/examples/3ydl3_garage_b)
 
 ### [净途智行 · 国产无人清扫车系统](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
@@ -89,4 +92,4 @@ IROS 2026 · Paper **775** · **学生第二作者**
 
 **C++ / Python · ROS 1 / ROS 2 · Linux · Nav2 · FAST-LIO / ICP · Hybrid A* / TEB · B-spline / MPC · 多模态 RAG**
 
-项目更新于 2026-11-24。
+项目更新于 2026-11-25。
