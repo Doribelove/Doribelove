@@ -30,13 +30,13 @@ IROS 2026 · Paper **775** · **学生第二作者**
 在 RTX 5090 上接入 WALL-OSS-0.5 官方权重，为 Isaac Sim 中的 EX001 双臂实现推理接口与任务控制器。控制器根据仿真物体位姿协调双臂，并用模型输出修正右手位置。五段录像展示教具分装、定向擦板、旋盖、折巾与 USB 插接。擦板任务擦除全部 8 处目标并保留 6 处标记，USB 插入 9.56 mm，双手松开后保持插接 3.20 秒。
 [双臂仿真演示](https://doribelove.github.io/projects/#embodied) · [五段录像与复现方法](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/README.md) · [USB 插接录像](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/D5_hold_17/trial.mp4) · [逐项结果](https://github.com/Doribelove/wall-x/blob/main/examples/isaac_sim/evidence/results.json)
 
-### [普渡 · 分层导航与运动规划](https://github.com/Doribelove/pudu_robot_ws)
+### [三层全局路径规划器](https://doribelove.github.io/projects/#layered-planner)
 
-在 ROS 2 / Nav2 上实现 **3YDL3-V13-P6** 三层全局规划器。先按道路拓扑选择通道，在通道内搜索参考路径，交通条件变化时用增量 D* 更新路径。最后用三次 B 样条优化整条路线，并校验车体通行空间、曲率和交通规则。
+基于 ROS 2 / Nav2 为移动机器人规划全局路径。第一层按地图拓扑选择通道，第二层在通道内搜索参考路径，并在通行条件变化时用增量 D* 更新。第三层用三次 B 样条优化整条路径，校验车体通行空间、转弯曲率和交通规则。
 
-在 10 张地图上对 100 个固定任务各运行 3 轮，**300/300 次静态规划成功**。请求耗时中位数 **0.857 s**。相同任务下，每次请求的进程树峰值内存（RSS）中位数为 **844.25 MiB**
+在 10 张地图上对 100 个固定任务各运行 3 轮，**300/300 次静态规划成功**。请求耗时中位数为 **0.857 s**，进程树峰值内存（RSS）中位数为 **844.25 MiB**。
 
-[项目图文](https://doribelove.github.io/projects/#pudu) · [P6 交付源码](https://github.com/Doribelove/pudu_robot_ws/tree/main/3YDL3-V13-P6-delivery) · [十图实验、分层对照与逐次数据](https://github.com/Doribelove/pudu_robot_ws/blob/6a4405d5dbe64c498c3bb4e672600a7332ea1acb/3YDL3-V13-P6-delivery/report/RESULTS.md) · [合成地库 B 示例（V11-r4）](https://github.com/Doribelove/pudu_robot_ws/tree/main/examples/3ydl3_garage_b)
+[查看测试结果](https://doribelove.github.io/#experiments)
 
 ### [净途智行 · 国产无人清扫车系统](https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws)
 
